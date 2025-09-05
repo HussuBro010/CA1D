@@ -8,14 +8,15 @@ fn main() {
     
     if args[1] == "-h" || args[1] == "--help" {
         println!("{}", "\nOne Dimensional Cellular Automaton".bold());
-        println!("1 - Black, 0 - White");
-        println!("Use ca1d -help for help");
-        println!("Usage: ca1d <cols> <steps> <init> <rule>");
+        println!("1 - Black, 0 - White\n");
+        println!("Use ca1d --help or -h for help");
+        println!("Usage: ca1d <cols> <steps> <init> <rule>\n");
         println!("Cols: Number of columns; length of the 1d grid");
-        println!("Steps: Number of steps to simulate");
-        println!("Init: Initial State of the Grid. Ex: 01001001. number of characters(0/1) must be equal to columns or 0 (for empty grid) and 1 (for full grid).");
+        println!("Steps: Number of steps to simulate\n");
+        println!("Init: Initial State of the Grid. Ex: 01001001. number of characters(0/1) must be equal to columns.");
+        println!("or it could be 0 (for empty grid), 1 (for full grid), m (for middle on), !m (for middle off, rest on), r (for random)\n");
         println!("Rule: Cellular Rule. Must be an integer between 1 to 127.");
-        println!("Example of a Rule: 84 --- into binary --> 01010100");
+        println!("Example of a Rule: 84 --- into binary --> 01010100\n");
         println!("left center right   result");
         println!(" 1     1     1         0");
         println!(" 0     1     1         1");
